@@ -12,7 +12,7 @@ const GET_PROJECTS = gql`
 
 const GET_PROJECT = gql`
   query getProject($id: ID!) {
-    projects(id: $id) {
+    project(id: $id) {
       id
       name
       description
@@ -27,4 +27,4 @@ const GET_PROJECT = gql`
   }
 `;
 
-export { GET_PROJECTS };
+export { GET_PROJECTS, GET_PROJECT };
